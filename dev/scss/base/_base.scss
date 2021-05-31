@@ -1,0 +1,21 @@
+/*! -------------------------
+Base
+-------------------------- */
+
+@use "../abstract" as *;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $color-bg-light;
+}
+
+a {
+  text-decoration: none;
+}
+
+// input {
+//   font-family: $font-primary;
+// }

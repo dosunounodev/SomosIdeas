@@ -1,0 +1,37 @@
+/*! -------------------------
+Services
+-------------------------- */
+
+@use "../abstract" as *;
+
+.head__services {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+  @include laptop {
+    align-items: flex-end;
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 2;
+  }
+}
+
+.content__services {
+  grid-column: 1 / span 2;
+  grid-row: 3 / span 6;
+  @include laptop {
+    grid-column: 2 / span 1;
+    grid-row: 3 / span 8;
+  }
+}
+
+.box__services {
+  align-items: flex-end;
+  padding-right: 20px;
+  grid-column: 1 / span 2;
+  grid-row: 9 / span 2;
+  @include laptop {
+    align-items: center;
+    padding-right: 0;
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 10;
+  }
+}

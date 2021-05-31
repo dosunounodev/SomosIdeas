@@ -1,0 +1,11 @@
+/*! -------------------------
+Grid
+-------------------------- */
+
+@use "../abstract" as *;
+
+section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(10, 10vh);
+}

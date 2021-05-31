@@ -1,0 +1,35 @@
+/*! -------------------------
+Nav
+-------------------------- */
+
+@use "../abstract" as *;
+
+.head__nav {
+  @include flex(column, center, start);
+  width: auto;
+  // background-color: blue;
+}
+
+.nav__list {
+  @include flex(row);
+  width: 100%;
+  margin-top: 0px;
+}
+
+.nav__list--right {
+  @include laptop {
+    justify-content: flex-end;
+  }
+}
+
+.nav__item:nth-child(1) {
+  margin: 0;
+  margin-right: 25px;
+}
+
+.nav__link {
+  @include transition(0.4s, 0, linear, color);
+  &:hover {
+    color: $color-primary;
+  }
+}

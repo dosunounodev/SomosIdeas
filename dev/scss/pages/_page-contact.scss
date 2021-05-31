@@ -1,0 +1,79 @@
+/*! -------------------------
+Contact
+-------------------------- */
+
+@use "../abstract" as *;
+
+.head__contact {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+  @include laptop {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 2;
+  }
+}
+
+.content__contact {
+  grid-column: 1 / span 2;
+  grid-row: 3 / span 6;
+  @include laptop {
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 8;
+  }
+}
+
+.box__contact {
+  align-items: flex-end;
+  padding-right: 20px;
+  grid-column: 1 / span 2;
+  grid-row: 9 / span 2;
+  @include laptop {
+    align-items: center;
+    padding-right: 0;
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 10;
+  }
+}
+
+.contact-form {
+  @include flex-center(column);
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
+.contact-label {
+  display: flex;
+  width: 100%;
+  height: 40px;
+  margin-bottom: 20px;
+}
+
+.contact-label--msg {
+  flex: 1;
+  max-height: 400px;
+}
+
+.contact-input {
+  width: 100%;
+  height: 100%;
+  padding: 0 20px;
+  font-size: $size-md1;
+  font-weight: $medium;
+}
+
+.contact-submit {
+  width: 100%;
+  padding: 20px;
+  font-size: $size-md2;
+  font-weight: $medium;
+  text-transform: uppercase;
+  color: $color-bg-light;
+  background-color: $color-secondary;
+  cursor: pointer;
+  @include transition(0.4s, 0, linear, color, background-color);
+  &:hover {
+    color: $color-secondary;
+    background-color: $color-primary;
+  }
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="follow, index">
+    <meta name="description" content="We see what others don't. We do what others can't.">
+    <meta name="author" content="dosunouno.dev / Martín Fernández">
+    <title>Ideas. | Creativity for Brands</title>
+    <meta property="og:title" content="Ideas. | Creativity for Brands">
+    <meta property="og:type" content="Brand Studio Website">
+    <meta property="og:description" content="We see what others don't. We do what others can't.">
+    <meta property="og:url" content="https://somosideas.com.ar/">
+    <meta property="og:image" content="https://somosideas.com.ar/assets/logos/logo.png">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32x32.png">
+    <script src="https://kit.fontawesome.com/6043d9e4ba.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <main>
+      <section id="home">
+        <header class="head__home">
+          <nav class="head__nav">
+            <h1 class="head__logo-img"><img src="./assets/logos/logo.png" alt="Ideas"></h1>
+            <ul class="nav__list">
+              <li class="nav__item"> <a class="nav__link" href="#services">what we do </a></li>
+              <li class="nav__item"> <a class="nav__link" href="#contact">contact </a></li>
+            </ul>
+          </nav>
+        </header>
+        <article class="box box__home">
+          <h2 class="box__title">Creativity <br>for Brands</h2>
+        </article>
+      </section>
+      <section id="services">
+        <header class="head__services">
+          <nav class="head__nav">
+            <h2 class="head__title">services </h2>
+            <ul class="nav__list nav__list--right">
+              <li class="nav__item"> <a class="nav__link" href="#home">home  </a></li>
+              <li class="nav__item"> <a class="nav__link" href="#contact">contact </a></li>
+            </ul>
+          </nav>
+        </header>
+        <article class="box box__services">
+          <h2 class="box__title">We can<span> do a lot</span></h2>
+        </article>
+        <article class="content content__services">
+          <div class="content-wrapper">
+            <div class="card"><img src="./assets/icons/brainstorming.png" alt="brainstorming">
+              <h3 class="card__title">brainstorming</h3>
+              <p class="card__text">Think together. Do more.</p>
+            </div>
+            <div class="card"><img src="./assets/icons/innovation.png" alt="innovation">
+              <h3 class="card__title">innovation</h3>
+              <p class="card__text">The only truly sustainable competitive advantage over time.</p>
+            </div>
+            <div class="card"><img src="./assets/icons/solutions.png" alt="solutions">
+              <h3 class="card__title">solutions</h3>
+              <p class="card__text">We see what others don't. <br>We do what others can't. </p>
+            </div>
+          </div>
+        </article>
+      </section>
+      <section id="contact">
+        <header class="head__contact">
+          <nav class="head__nav">
+            <h2 class="head__title">contact</h2>
+            <ul class="nav__list">
+              <li class="nav__item"> <a class="nav__link" href="#home">home </a></li>
+              <li class="nav__item"> <a class="nav__link" href="#services">what we do </a></li>
+            </ul>
+          </nav>
+        </header>
+        <article class="box box__contact">
+          <h2 class="box__title">Let's talk</h2>
+          <p class="box__subtitle"><a href="mailto:hola@somosideas.com.ar">hola@somosideas.com.ar</a></p>
+        </article>
+        <article class="content content__contact">
+          <div class="content-wrapper">
+            <form class="contact-form" action="https://formsubmit.co/hola@somosideas.com.ar" method="POST">
+              <input type="hidden" name="_next" value="http://somosideas.com.ar/index.html#home">
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_subject" value="Nuevo mensaje de contacto en somosideas.com.ar">
+              <input type="text" name="_honey" style="display:none">
+              <label class="contact-label">
+                <input class="contact-input" type="text" name="name" placeholder="Name">
+              </label>
+              <label class="contact-label">
+                <input class="contact-input" type="email" name="email" placeholder="Email">
+              </label>
+              <label class="contact-label contact-label--msg">
+                <input class="contact-input" type="text" name="message" placeholder="Message">
+              </label>
+              <button class="contact-submit" type="submit">Send</button>
+            </form>
+          </div>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

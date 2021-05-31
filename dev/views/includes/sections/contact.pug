@@ -1,0 +1,27 @@
+section#contact
+    header.head__contact
+        nav.head__nav
+            h2.head__title contact
+            ul.nav__list
+                li.nav__item 
+                    a(href="#home").nav__link home 
+                li.nav__item 
+                    a(href="#services").nav__link what we do 
+    article.box.box__contact
+        h2.box__title Let's talk
+        p.box__subtitle
+            a(href="mailto:hola@somosideas.com.ar") hola@somosideas.com.ar
+    article.content.content__contact
+        .content-wrapper
+            form(action="https://formsubmit.co/hola@somosideas.com.ar" method="POST").contact-form
+                input(type="hidden" name="_next" value="http://somosideas.com.ar/index.html#home")
+                input(type="hidden" name="_captcha" value="false")
+                input(type="hidden" name="_subject" value="Nuevo mensaje de contacto en somosideas.com.ar")
+                input(type="text" name="_honey" style="display:none")
+                label.contact-label
+                    input(type="text" name="name" placeholder="Name").contact-input
+                label.contact-label
+                    input(type="email" name="email" placeholder="Email").contact-input
+                label.contact-label.contact-label--msg
+                    input(type="text" name="message" placeholder="Message").contact-input
+                button(type="submit").contact-submit Send

@@ -1,0 +1,42 @@
+// /*! -------------------------
+// Fonts
+// -------------------------- */
+
+@use "./variables" as *;
+
+// FAMILIES ...
+
+// Fuente Principal
+// Para contenido en general
+$font-primary: 'Poppins', sans-serif;
+
+// Fuente Secundaria
+// Para contenido especial/destacado
+$font-secondary: 'Poppins', sans-serif;
+
+// SIZES ...
+
+// Small Sizes
+$size-sm: 1.2rem;
+
+// Medium Sizes
+$size-md1: 1.6rem;
+$size-md2: 2.4rem;
+$size-md3: 3.6rem;
+
+// Large Sizes
+$size-lg1: 4.8rem;
+$size-lg2: 6.4rem;
+
+// Extra-Large Sizes
+$size-xl: 12rem;
+
+// WEIGHTS ...
+
+// Regular
+$normal: 400;
+$medium: 500;
+
+// Heavy
+$semibold: 600;
+$bold: 700;

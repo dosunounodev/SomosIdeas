@@ -1,0 +1,89 @@
+/*! -------------------------
+Typo
+-------------------------- */
+
+@use "../abstract" as *;
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $font-primary;
+  font-size: $size-md1;
+  color: $color-secondary;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.head__title {
+  font-size: $size-lg1;
+  text-align: center;
+  color: $color-secondary;
+  @include tablet {
+    font-size: $size-lg2;
+  }
+}
+
+.box__title {
+  font-size: $size-md3;
+  text-align: center;
+  color: $color-bg-light;
+  @include tablet {
+    font-size: $size-lg2;
+  }
+  @include laptop {
+    span {
+      display: block;
+    }
+  }
+  @include desktop {
+    font-size: $size-xl;
+  }
+}
+
+.box__subtitle {
+  a {
+    font-size: $size-md1;
+    color: $color-bg-light;
+    @include transition(0.4s, 0, linear, color);
+    &:hover {
+      color: $color-secondary;
+    }
+    @include tablet {
+      font-size: $size-md2;
+    }
+  }
+}
+
+.nav__link {
+  font-size: $size-md2;
+  font-weight: $medium;
+  text-align: center;
+  color: $color-label-dark;
+  @include tablet {
+    font-size: $size-md2;
+  }
+}
+
+.card__title {
+  font-size: $size-md1;
+  text-transform: uppercase;
+  @include tablet {
+    font-size: $size-lg1;
+  }
+}
+
+.card__text {
+  text-align: center;
+  margin: 0;
+  @include tablet {
+    font-size: $size-md2;
+  }
+}
